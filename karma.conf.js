@@ -2,7 +2,7 @@
 // https://karma-runner.github.io/0.13/config/configuration-file.html
 
 module.exports = function (config) {
-    var configuration = {
+    const configuration = {
         // Only for travis
         customLaunchers: {
             Chrome_travis_ci: {
@@ -53,5 +53,5 @@ module.exports = function (config) {
         configuration.reporters = ['spec', 'coverage'];
     }
 
-    config.set();
+    config.set(configuration);
 };
